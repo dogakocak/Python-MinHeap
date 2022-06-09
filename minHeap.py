@@ -35,7 +35,7 @@ class MinHeap:
 
     def heapDown(self,loc):
             while loc < self.__size -1:
-                if (self.__LeftChild(loc) <= self.__size -1) and (self.__RightChild(loc) <= self.__size -1): # if there is left and right childs
+                if (self.__LeftChild(loc) <= self.__size -1) and (self.__RightChild(loc) <= self.__size -1): # if there are left and right childs
                     if self.__items[self.__LeftChild(loc)] < self.__items[self.__RightChild(loc)]: # if left child is greater than right child
                         if self.__items[loc] < self.__items[self.__LeftChild(loc)]:
                             break
