@@ -50,7 +50,7 @@ class MinHeap:
                         self.__items[loc] = self.__items[self.__RightChild(loc)]
                         self.__items[self.__RightChild(loc)] = tmp
                         loc = self.__RightChild(loc)
-                elif self.__LeftChild(loc) <= self.__size-1: # if there is only left child and there is no condition only right child because of heap structure
+                elif self.__LeftChild(loc) <= self.__size-1: # if there is only left child and there is no condition that there is only the right child because of heap structure
                     if self.__items[loc] < self.__items[self.__LeftChild(loc)]:
                         break
                     tmp = self.__items[loc]
